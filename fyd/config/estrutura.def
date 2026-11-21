@@ -1,0 +1,52 @@
+# FydelisTechOS — ESTRUTURA DEFINITIVA v4.0
+# ⚠️ SISTEMA PRÓPRIO · NÃO É BASEADO EM LINUX
+# Construído do zero — Kernel + Interface + Ferramentas
+# Atualizado: 2026-11-03
+# Salvador • Bahia 🇧🇷
+# ==========================================
+# CAMINHO               PERM   DONO    LETRA  TIPO        OBSERVAÇÃO
+# -----------------------------------------------------------------------
+# Raiz e partições raiz
+/                       0755   root     -      raiz        Raiz do FydelisTechOS
+/boot                   0500   root     A      bootloader  Partição de inicialização nativa
+/fyd                    0555   root     B      núcleo      Coração do sistema — imutável ✅ PRÓPRIO
+/secure                 0700   root     C      criptado    Dados protegidos 🔒
+/usuarios               0755   root     D      home        Área dos usuários
+/tmp                    1777   root     E      ram-disk     Memória temporária
+/dados                  0755   root     F      dados       Arquivos e projetos
+
+# === NÚCLEO DO SISTEMA — Letra B: (/fyd) ✅ PRÓPRIO ===
+/fyd/bin                0555   root     B      exec        Executáveis nativos do FydelisTechOS
+/fyd/lib                0555   root     B      módulo      Bibliotecas internas (.fydmod)
+/fyd/apps               0555   root     B      pacote      Aplicativos instalados (.fydapp)
+/fyd/config             0700   root     B      conf        Configurações do sistema
+/fyd/menu               0755   root     B      dinâmico    Itens carregados de .fydmenu
+/fyd/registro           0700   root     B      log         Auditoria · CVE Shield · Segurança
+/fyd/associacoes        0755   root     B      mapeamento  Extensões → Aplicativos (.fydcores, .fydwd, etc)
+/fyd/temas              0755   root     B      visual      Estilos e paletas de cores
+/fyd/drivers            0555   root     B      driver      Módulos de hardware
+/fyd/terminal           0555   root     B      shell       FydelTerm — Shell nativa
+/fyd/lixeira            1777   root     B      lixeira     Arquivos removidos
+
+# === DADOS PROTEGIDOS — Letra C: (/secure) 🔒 ===
+/secure/contas          0700   root     C      criptado    Banco de usuários — AES-256
+/secure/sistema         0700   root     C      oculto       Chaves e segredos internos
+/secure/cofre           0700   root     C      cofre       Dados criptografados do sistema
+
+# === ÁREA DOS USUÁRIOS — Letra D: (/usuarios) ===
+/usuarios/%u            0700   usuario  D      perfil       Pessoal e isolado
+/usuarios/%u/.fydconf   0700   usuario  D      oculto       Preferências
+/usuarios/%u/projetos   0755   usuario  D      trabalho     Seus projetos
+/usuarios/%u/documentos 0755   usuario  D      arquivos     Seus documentos
+/usuarios/%u/recursos   0755   usuario  D      midia        Ícones, temas, músicas
+
+# === DADOS COMPARTILHADOS — Letra F: (/dados) ===
+/dados/geral            0755   root     F      comum       Arquivos compartilhados
+/dados/projetos         0755   root     F      equipe       Projetos colaborativos
+/dados/recuperacao      0700   root     F      recuperação Arquivos em restauração
+
+# === ARQUIVOS DE SISTEMA ===
+# /fyd/bin/fyd_desktop      0555   root     B   interface   ← Ambiente gráfico principal ✅
+# /fyd/config/fydcores.def  0644   root     B   paleta      ← Cores do sistema 🎨
+# /fyd/config/estrutura.def 0644   root     B   documento   ← Este arquivo
+# /secure/contas/.fyd_usuarios.dat 0600 root  C   banco       ← Contas criptografadas

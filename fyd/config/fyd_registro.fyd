@@ -1,0 +1,20 @@
+# ==========================================
+# FYDELISTECH OS — REGISTRO DO SISTEMA v4.2
+# ==========================================
+[Caminhos]
+raiz_sistema         = /fyd
+binarios             = /fyd/bin
+bibliotecas          = /fyd/lib
+aplicativos          = /fyd/apps
+configuracoes        = /fyd/config
+registro_sistema     = /fyd/config/fyd_registro.fyd
+[Sistema]
+versao               = 4.2
+idioma               = pt-BR
+teclado              = pt-BR
+fuso_horario         = America/Salvador
+[Interface]
+cor_fundo            = #0F051F
+cor_destaque         = #9D4EDD
+modo_escuro          = 1
+resolucao            = 1920x1080

@@ -1,0 +1,27 @@
+# ==========================================
+# FYDELISTECH OS — ASSOCIAÇÃO DE EXTENSÕES v4.0
+# Formato: .extensao = CaminhoDoAplicativo | Descrição | Icone
+# Caminho: /fyd/associacoes/fyd_extensoes.fydassoc
+# ==========================================
+
+[Extensoes]
+# 📝 Documentos
+.fydwd    = /fyd/apps/fydelis-writer.fydapp | Documento de Texto Fydelis | fyd-texto
+.fydcalc  = /fyd/apps/fydelis-calc.fydapp    | Planilha Fydelis            | fyd-calc
+.fydslide = /fyd/apps/fydelis-slide.fydapp   | Apresentação Fydelis         | fyd-slide
+.fydmusic = /fyd/apps/fydelis-music.fydapp   | Projeto Musical Fydelis      | fyd-musica
+
+# ⚙️ Sistema & Configuração
+.fydreg   = /fyd/apps/fydelis-config.fydapp  | Registro do Sistema          | fyd-registro
+.fydmenu  = /fyd/apps/fydelis-menu.fydapp    | Menu Dinâmico                | fyd-menu
+.fydcores = /fyd/apps/fydelis-temas.fydapp    | Paleta de Cores              | fyd-tema
+.fydsec   = /fyd/apps/fydelis-seguranca.fydapp| Arquivo Protegido            | fyd-cofre
+
+# 🔐 Segurança
+.fyduser  = /fyd/apps/fydelis-usuarios.fydapp | Perfil de Usuário            | fyd-usuario
+.fydlog   = /fyd/apps/fydelis-log.fydapp      | Log de Auditoria             | fyd-log
+
+[Comportamento]
+acao_duplo_clique = abrir_aplicativo
+exibir_tipo_no_arquivo = sim
+mostrar_icone_personalizado = sim

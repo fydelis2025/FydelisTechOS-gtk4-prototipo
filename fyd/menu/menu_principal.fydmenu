@@ -1,0 +1,29 @@
+# ==========================================
+# FYDELISTECH OS — MENU DINÂMICO v4.1
+# Formato:
+# == Categoria
+# icone | nome | tipo | alvo
+#
+# == Categoria > Subcategoria
+# icone | nome | tipo | alvo
+# ==========================================
+
+== Escritório
+📄 | FydelisWriter | app | gedit
+📊 | FydelisCalc | app | gnome-calculator
+📽️ | FydelisSlide | app | libreoffice-impress
+
+== Sistema > Ferramentas
+💻 | Terminal FydelTerm | app | gnome-terminal
+📁 | Explorador de Arquivos | func | explorador
+
+== Sistema > Configuração
+⚙️ | Painel de Controle | func | painel_controle
+🎨 | Tema e Aparência | func | tema_config
+👤 | Usuários e Segurança | func | usuarios_config
+
+== Sistema > Sessão
+🚪 | Sair da Sessão | func | sair_sessao
+💤 | Hibernar | func | hibernar
+🔄 | Reiniciar | func | reiniciar
+⏹️ | Desligar | func | desligar

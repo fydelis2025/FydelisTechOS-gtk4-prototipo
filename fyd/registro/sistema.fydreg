@@ -1,0 +1,94 @@
+# ==========================================
+# FYDELISTECH OS — REGISTRO DO SISTEMA v4.0
+# Formato: [CATEGORIA] → CHAVE = VALOR
+# ⚠️ SISTEMA PRÓPRIO · NÃO É LINUX
+# Caminho oficial: /fyd/config/fyd_registro.fyd
+# Atualizado: 2026-11-03 · Salvador 🇧🇷
+# ==========================================
+
+[Caminhos]
+# 📁 ESTRUTURA DE PASTAS — Alterar aqui = todo o sistema acompanha
+raiz_sistema        = /fyd
+binarios            = /fyd/bin
+bibliotecas         = /fyd/lib
+aplicativos         = /fyd/apps
+configuracoes       = /fyd/config
+menu_dinamico       = /fyd/menu
+registro_logs       = /fyd/registro
+associacoes         = /fyd/associacoes
+temas_cores         = /fyd/temas
+drivers             = /fyd/drivers
+terminal_shell      = /fyd/terminal
+lixeira             = /fyd/lixeira
+
+dados_protegidos    = /secure
+contas_usuarios     = /secure/contas
+segredos_sistema    = /secure/sistema
+cofre_backups       = /secure/cofre
+
+perfis_usuarios     = /usuarios
+dados_compartilhados = /dados
+tmp_temporario      = /tmp
+
+[Arquivos]
+# 📄 ARQUIVOS E BANCOS DE DADOS
+banco_contas        = /secure/contas/.fyd_usuarios.dat
+paleta_cores        = /fyd/config/fydcores.def
+estrutura_sistema   = /fyd/config/estrutura.def
+tema_atual_css      = /fyd/temas/padrao.css
+registro_sistema    = /fyd/config/fyd_registro.fyd
+log_auditoria       = /fyd/registro/auditoria.fydlog
+
+[Interface]
+# 🎨 APARENCIA E COMPORTAMENTO
+tema_atual          = padrao
+cor_fundo           = #0F051F
+cor_destaque        = #9D4EDD
+modo_escuro         = 1
+iniciar_tela        = desktop
+resolucao           = 1920x1080
+abrir_menu_ao_passar_mouse = 0
+animacoes_ativas    = 1
+
+[Sistema]
+# ⚙️ CONFIGURAÇÕES GERAIS
+versao              = 4.0
+codigo_versao       = FydelisTechOS-2026-11-03
+teclado             = pt-BR
+fuso_horario        = America/Salvador
+idioma              = pt-BR
+auto_atualizar      = 1
+verificar_cve       = 1
+
+[Usuario]
+# 👤 PERFIL PADRÃO / ÚLTIMO ACESSO
+ultimo_usuario      = 
+ultimo_login        = 
+auto_login          = 0
+iniciar_sessao_ultimo = 0
+
+[Aplicativos]
+# 🧰 CAMINHOS E ÚLTIMOS ARQUIVOS
+writer_caminho      = /fyd/apps/fydelis-writer.fydapp
+calc_caminho        = /fyd/apps/fydelis-calc.fydapp
+slide_caminho       = /fyd/apps/fydelis-slide.fydapp
+terminal_padrao     = /fyd/terminal/fydelterm
+navegador_padrao    = /fyd/apps/fyd-navegador.fydapp
+
+writer_ultimo       = 
+calc_ultimo         = 
+slide_ultimo        = 
+
+[Rede]
+# 📶 CONEXÕES
+inicio_automatico   = 1
+wifi_lembrar_senhas  = 1
+exibir_ip_na_barra  = 1
+proxy_ativo         = 0
+
+[Seguranca]
+# 🛡️ PROTEÇÃO
+aes_chave_tamanho   = 256
+bloquear_tentativas = 5
+tempo_bloqueio_segundos = 300
+cve_monitorar_tempo_real = 1
