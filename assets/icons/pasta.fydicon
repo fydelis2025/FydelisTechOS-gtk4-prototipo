@@ -1,0 +1,8 @@
+# Ícone de Pasta — FydelisTech OS
+versao = 1.0
+tipo = vetor
+cor_principal = #5E35B1
+cor_clara = #9D4EDD
+cor_escura = #2A1050
+estilo = fydelis
+tamanho_padrao = 32

@@ -1,0 +1,8 @@
+# Arquivo Genérico
+versao = 1.0
+tipo = vetor
+cor_principal = #0066CC
+cor_clara = #42A5F5
+cor_escura = #004C99
+estilo = fydelis
+tamanho_padrao = 32

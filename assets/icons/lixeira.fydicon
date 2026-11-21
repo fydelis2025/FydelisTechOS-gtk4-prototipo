@@ -1,0 +1,8 @@
+# Lixeira — FydelisTech OS
+versao = 1.0
+tipo = vetor
+cor_principal = #B71C1C
+cor_clara = #EF5350
+cor_escura = #7F0000
+estilo = fydelis
+tamanho_padrao = 32

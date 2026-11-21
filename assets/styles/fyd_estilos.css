@@ -1,0 +1,205 @@
+/* ==========================================
+   FYD ESTILOS — FydelisTech OS v4.2
+   Padrão fyd_ · Roxo Neon · Vidro · Imagens de Fundo
+   Salvador • Bahia 🇧🇷
+   ========================================== */
+
+/* Cores base */
+window {
+  background: linear-gradient(135deg, #0F051F, #2A1050);
+  color: #E0D7FF;
+}
+
+/* ==========================================
+   SPLASH SCREEN
+   ========================================== */
+.fyd-splash-fundo {
+  background-image: url("resource:///com/fydelistech/recursos/fundo_splash.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fyd-logo-grande {
+  font-size: 96px;
+  font-weight: 900;
+  color: #9D4EDD;
+  text-shadow: 0 0 30px #9D4EDD, 0 0 60px #C77DFF;
+}
+.fyd-texto-sistema {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 4px;
+}
+.fyd-texto-versao {
+  font-size: 13px;
+  color: #C77DFF;
+  opacity: 0.8;
+}
+.fyd-barra-carregando > trough {
+  background: #2A1050;
+  border-radius: 4px;
+}
+.fyd-barra-carregando > progress {
+  background: linear-gradient(90deg, #5E35B1, #9D4EDD);
+  border-radius: 4px;
+  box-shadow: 0 0 10px #9D4EDD;
+  min-height: 8px;
+}
+.fyd-texto-status {
+  font-size: 14px;
+  color: #C77DFF;
+  margin-top: 8px;
+}
+
+/* ==========================================
+   TELA DE LOGIN — Com imagem de fundo
+   ========================================== */
+.fyd-login-fundo {
+  /* A imagem é carregada via GtkPicture no código — aqui fica transparente */
+  background: transparent;
+}
+.fyd-caixa-vidro {
+  background: rgba(42, 16, 80, 0.70);
+  border: 1px solid rgba(157, 78, 221, 0.4);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(94, 53, 177, 0.35);
+  padding: 32px 24px;
+}
+.fyd-logo-pequeno {
+  font-size: 64px;
+  font-weight: 900;
+  color: #9D4EDD;
+  text-shadow: 0 0 20px #9D4EDD;
+}
+.fyd-texto-titulo {
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.fyd-entrada {
+  background: rgba(15, 5, 31, 0.6);
+  border: 1px solid rgba(157, 78, 221, 0.5);
+  border-radius: 12px;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+}
+.fyd-entrada:focus {
+  border-color: #9D4EDD;
+  box-shadow: 0 0 12px rgba(157, 78, 221, 0.4);
+}
+.fyd-botao-neon {
+  background: linear-gradient(90deg, #5E35B1, #9D4EDD);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.5);
+}
+.fyd-botao-neon:hover {
+  box-shadow: 0 0 25px rgba(157, 78, 221, 0.7);
+}
+
+/* ==========================================
+   ÁREA DE TRABALHO — Imagem de fundo
+   ========================================== */
+.fyd-fundo-area {
+  /* A imagem de fundo é carregada via GtkPicture no código */
+  background: transparent;
+}
+.fyd-barra-superior {
+  background: rgba(42, 16, 80, 0.75);
+  border-top: 1px solid rgba(157, 78, 221, 0.4);
+  min-height: 60px;
+  padding: 8px 12px;
+}
+.fyd-botao-iniciar {
+  background: linear-gradient(135deg, #5E35B1, #9D4EDD);
+  border: none;
+  border-radius: 50%;
+  min-width: 50px;
+  min-height: 50px;
+  font-size: 22px;
+  font-weight: 900;
+  color: white;
+  box-shadow: 0 0 12px rgba(157, 78, 221, 0.5);
+}
+.fyd-botao-iniciar:checked {
+  background: linear-gradient(135deg, #9D4EDD, #C77DFF);
+  box-shadow: 0 0 20px rgba(199, 125, 255, 0.6);
+}
+.fyd-icone-app {
+  border-radius: 16px;
+  min-width: 90px;
+  min-height: 90px;
+  background: rgba(94, 53, 177, 0.5);
+  border: 2px solid rgba(157, 78, 221, 0.3);
+  font-size: 36px;
+}
+.fyd-icone-app:hover {
+  background: rgba(94, 53, 177, 0.7);
+  border-color: #9D4EDD;
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.5);
+}
+
+/* ==========================================
+   MENU INICIAR
+   ========================================== */
+.fyd-menu {
+  background: rgba(42, 16, 80, 0.75);
+  border: 1px solid rgba(157, 78, 221, 0.4);
+  border-radius: 12px;
+  padding: 12px;
+  min-width: 280px;
+  max-width: 280px;
+}
+.fyd-item-menu {
+  padding: 12px 16px;
+  border-radius: 6px;
+  color: #E0D7FF;
+  font-size: 15px;
+}
+.fyd-item-menu:hover {
+  background: rgba(94, 53, 177, 0.5);
+  border-left: 3px solid #9D4EDD;
+}
+.fyd-separador {
+  background: rgba(157, 78, 221, 0.3);
+  min-height: 1px;
+  margin: 6px 12px;
+}
+
+/* Barra de Busca no Menu */
+.fyd-menu .fyd-entrada {
+  background: rgba(15, 5, 31, 0.6);
+  border: 1px solid rgba(157, 78, 221, 0.4);
+  border-radius: 8px;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+.fyd-menu .fyd-entrada:focus {
+  border-color: #9D4EDD;
+  box-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+}
+
+/* ==========================================
+   ÍCONES DA ÁREA DE TRABALHO
+   ========================================== */
+.fyd-icone-area {
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 8px;
+}
+.fyd-icone-area:hover {
+  background: rgba(94, 53, 177, 0.4);
+  box-shadow: 0 0 12px rgba(157, 78, 221, 0.4);
+}
+.fyd-texto-icone {
+  font-size: 12px;
+  color: #FFFFFF;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
