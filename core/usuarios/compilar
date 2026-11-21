@@ -1,0 +1,2 @@
+gcc usuarios/fyd_usuarios.c -o fyd_usuarios -lcrypto -Wall
+

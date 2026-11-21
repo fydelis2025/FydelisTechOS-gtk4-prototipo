@@ -1,0 +1,40 @@
+{
+    "versao": "1.0",
+    "atualizada_em": "2026-09-23",
+    "descricao": "Base de Assinaturas — FydelisTech CVE Shield",
+    "regras": [
+        {
+            "id": "CVE-PADRAO-001",
+            "nome": "Buffer Overflow — Cópia sem limite",
+            "padrao_assembly": "mov.*\\(.*%[a-z]+\\),.*(%[a-z]+\\).*sem limite",
+            "padrao_cpp": "strcpy|gets\\(|sprintf\\(",
+            "risco": "CRITICO",
+            "acao": "BLOQUEAR",
+            "mensagem": "Função insegura detectada — use strncpy ou snprintf"
+        },
+        {
+            "id": "CVE-PADRAO-002",
+            "nome": "Injeção via Shell — Perl",
+            "padrao_perl": "system\\s*\\(\\s*['\"]?[a-z]+.*\\$",
+            "risco": "ALTO",
+            "acao": "ALERTAR",
+            "mensagem": "Dados do usuário passados diretamente para shell — valide antes"
+        },
+        {
+            "id": "CVE-PADRAO-003",
+            "nome": "Execução com privilégios excessivos",
+            "padrao": "setuid\\(0\\)|root sem necessidade",
+            "risco": "ALTO",
+            "acao": "BLOQUEAR",
+            "mensagem": "Elevação de privilégio detectada — verifique permissões mínimas"
+        },
+        {
+            "id": "CVE-PADRAO-004",
+            "nome": "Comunicação sem criptografia",
+            "padrao": "http://|telnet\\s+|ftp\\s+[^s]",
+            "risco": "MEDIO",
+            "acao": "ALERTAR",
+            "mensagem": "Protocolo inseguro — prefira HTTPS, SSH, SFTP"
+        }
+    ]
+}
