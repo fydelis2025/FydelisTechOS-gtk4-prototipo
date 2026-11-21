@@ -1,7 +1,7 @@
 # 📂 Fydelis GUI — Versão Antiga / Histórica
 
 > ⏳ **Arquivo Histórico — Não é a versão atual**
-> Esta é uma das primeiras tentativas de interface gráfica para o Fydelis.
+> Esta é uma das primeiras tentativas de interface gráfica para o FydelisTechOS.
 > **Mantida aqui apenas para fins de estudo e comparação de evolução.**
 >
 > FydelisTechos • Salvador — Bahia, Brasil
