@@ -1,0 +1,27 @@
+# ==========================================
+# FYDELISTECH OS — TEMA PADRÃO .fydcores
+# Versão 3.2 · FydelisTech 💜
+# ==========================================
+# Formato: NOME = VALOR
+# Linha começando com # = comentário
+# ==========================================
+
+# 🖤 Fundo Geral
+FYD_COR_FUNDO        = #0F051F
+
+# 💜 Roxos — Identidade Fydelis
+FYD_COR_ROXO_ESCURO  = #2A1050
+FYD_COR_ROXO_MEDIO   = #5E35B1
+FYD_COR_ROXO_NEON    = #9D4EDD
+FYD_COR_ROXO_CLARO   = #C77DFF
+
+# ✍️ Texto
+FYD_COR_TEXTO        = #E0D7FF
+FYD_COR_TEXTO_CLARO  = #FFFFFF
+
+# 🪟 Efeitos
+FYD_COR_VIDRO        = rgba(42, 16, 80, 0.75)
+FYD_COR_BORDA_NEON   = rgba(157, 78, 221, 0.8)
+
+# 📏 Dimensões
+FYD_ALT_BARRA        = 56
