@@ -1,4 +1,4 @@
-# 📂 Fydelis GUI — Versão Antiga / Histórica
+# 📂 FydelisTechOS — Versão que não vingou com GTK4 / Histórica
 
 > ⏳ **Arquivo Histórico — Não é a versão atual**
 > Esta é uma das primeiras tentativas de interface gráfica para o FydelisTechOS.
